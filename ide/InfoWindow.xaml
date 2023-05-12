@@ -1,0 +1,53 @@
+﻿<Window x:Class="ide.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ide"
+        mc:Ignorable="d"
+        Title="Математичний інтерпретатор"
+        Height="400" Width="650" WindowStartupLocation="CenterOwner"
+        WindowStyle="ToolWindow" Icon="Icons/Book.png"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.2*" />
+            </Grid.RowDefinitions>
+            <Image Source="Icons/Blot.png"
+                   WindowChrome.IsHitTestVisibleInChrome="True"
+                   Grid.Row="1" Margin="-45" />
+            <StackPanel Grid.Column="1" Grid.Row="1">
+                <Label FontFamily="Century Gothic" FontSize="16"
+                       Content="Дипломний проект"
+                       VerticalContentAlignment="Top"
+                       HorizontalContentAlignment="Left" />
+                <Label FontFamily="Century Gothic" FontSize="16"
+                       Content="Автор: Салов Богдан Віталійович"
+                       VerticalContentAlignment="Top"
+                       HorizontalContentAlignment="Left" />
+                <Label FontFamily="Century Gothic" FontSize="16"
+                       Content="Студент 4 курсу групи ПЗ-16-1"
+                       VerticalContentAlignment="Top"
+                       HorizontalContentAlignment="Left" />
+                <DockPanel>
+                    <Label FontFamily="Century Gothic" FontSize="16"
+                           Content="Версія програми: 1.0"
+                           VerticalContentAlignment="Top"
+                           HorizontalContentAlignment="Left" />
+                    <Image Source="Icons/Angel.png" Width="22"
+                           HorizontalAlignment="Left" Margin="0,0,0,2" />
+                </DockPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

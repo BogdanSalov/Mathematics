@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{DE64DED2-B25F-4E1D-9E63-6A18C39CCF01}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ide</RootNamespace>
+    <AssemblyName>ide</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Лариса\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.AvalonEdit">
+      <HintPath>..\packages\AvalonEdit.6.0.1\lib\net45\ICSharpCode.AvalonEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FindAndReplaceWindow.xaml.cs" />
+    <Compile Include="InfoWindow.xaml.cs" />
+    <Compile Include="MainWindow.xaml.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\WPFAssemblyInfo.cs" />
+    <Compile Include="SettingsConsoleWindow.xaml.cs" />
+    <Compile Include="SettingsEditorWindow.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\AddFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\OpenFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\CloseTab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\SaveAll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\SaveAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Cookie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Console.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Cupcake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Past.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\GitHub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Angel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Blot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\CloseAllTabs.png" />
+    <Resource Include="Icons\Delete.png" />
+    <Resource Include="Icons\FindAndReplace.png" />
+    <Resource Include="Icons\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Services.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\DataTransfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="FindAndReplaceWindow.xaml" />
+    <Page Include="InfoWindow.xaml" />
+    <Page Include="MainWindow.xaml" />
+    <Page Include="SettingsConsoleWindow.xaml" />
+    <Page Include="SettingsEditorWindow.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Font\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MathSyntax.xshd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
